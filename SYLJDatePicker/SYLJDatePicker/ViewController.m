@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SYLJDatePickerView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.frame = CGRectMake(200, 150, 50, 50);
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)click
+{
+    SYLJDatePickerView *datePicker = [[SYLJDatePickerView alloc] initWithDatePickerType:SYLJDatePickerTypeBirthdayDate dateSelBlock:^(NSString *dateString) {
+        NSLog(@"%@",dateString);
+    }];
+    [datePicker showDatePicker];
 }
 
 
