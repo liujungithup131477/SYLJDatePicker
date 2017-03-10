@@ -27,6 +27,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self prepareUI];
+        [self setupAction];
     }
     return self;
 }
@@ -39,6 +40,12 @@
     
     [self.toolsView addSubview:self.dividingline];
     [self.toolsView addSubview:self.datePicker];
+}
+
+- (void)setupAction
+{
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideDatePicker)];
+    [self addGestureRecognizer:tapGesture];
 }
 
 #pragma mark - 
@@ -62,7 +69,7 @@
     [UIView animateWithDuration:0.25 animations:^{
         self.toolsView.frame = CGRectMake(0, kScreenHeight, kScreenWidth, kDatePickerToolHeight + kDatePickerHeight);
     } completion:^(BOOL finished) {
-        [self.toolsView removeFromSuperview];
+        [self removeFromSuperview];
     }];
 }
 
