@@ -13,6 +13,7 @@
 		85B528071E72913A00B649F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B528051E72913A00B649F7 /* Main.storyboard */; };
 		85B528091E72913A00B649F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B528081E72913A00B649F7 /* Assets.xcassets */; };
 		85B5280C1E72913A00B649F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B5280A1E72913A00B649F7 /* LaunchScreen.storyboard */; };
+		85B528161E72969A00B649F7 /* SYLJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B528151E72969A00B649F7 /* SYLJDatePickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		85B528081E72913A00B649F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85B5280B1E72913A00B649F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85B5280D1E72913A00B649F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85B528141E72969A00B649F7 /* SYLJDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYLJDatePickerView.h; sourceTree = "<group>"; };
+		85B528151E72969A00B649F7 /* SYLJDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYLJDatePickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		85B527FB1E72913A00B649F7 /* SYLJDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				85B528131E72959D00B649F7 /* SYLJDatePicker */,
 				85B527FF1E72913A00B649F7 /* AppDelegate.h */,
 				85B528001E72913A00B649F7 /* AppDelegate.m */,
 				85B528021E72913A00B649F7 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				85B527FD1E72913A00B649F7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85B528131E72959D00B649F7 /* SYLJDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				85B528141E72969A00B649F7 /* SYLJDatePickerView.h */,
+				85B528151E72969A00B649F7 /* SYLJDatePickerView.m */,
+			);
+			path = SYLJDatePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85B528161E72969A00B649F7 /* SYLJDatePickerView.m in Sources */,
 				85B528041E72913A00B649F7 /* ViewController.m in Sources */,
 				85B528011E72913A00B649F7 /* AppDelegate.m in Sources */,
 				85B527FE1E72913A00B649F7 /* main.m in Sources */,
